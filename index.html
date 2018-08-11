@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1149px, initial-scale=1">
+	<title>Кальянная PUR PUR</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="normalize.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+
+	<header>
+		<div class="slider">
+			<ul id="slides">
+				<li class="slide showing"></li>
+				<li class="slide"></li>
+				<li class="slide"></li>
+			</ul>
+			<script>
+				var slides = document.querySelectorAll('#slides .slide');
+				var currentSlide = 0;
+				var slideInterval = setInterval(nextSlide, 4000);
+
+				function nextSlide() {
+					slides[currentSlide].className = 'slide';
+					currentSlide = (currentSlide + 1) % slides.length;
+					slides[currentSlide].className = 'slide showing';
+				}
+
+			</script>
+			<div class="container">
+				<div class="header-button">
+					<a class="header-button__link" href="#">Заказать столик</a>
+				</div>
+				<div class="header-top">
+					<div class="header-top__leftside">
+						<a class="header-top__logo-link" href="index.html" title="PUR PUR"><img class="header-top__logo" src="images/logo.png" alt="PUR PUR logo"></a>
+					</div>
+					<div class="header-top__center">
+						<nav class="header-top__nav">
+							<ul class="header-top__nav-menu">
+								<li class="nav-menu__item"><a href="#" class="nav-menu__link nav-menu__link-center">О нас</a></li>
+								<li class="nav-menu__item"><a href="#" class="nav-menu__link center-link">Акции и мероприятия</a></li>
+								<li class="nav-menu__item"><a href="#" class="nav-menu__link nav-menu__link-center">Меню</a></li>
+								<li class="nav-menu__item"><a href="#" class="nav-menu__link nav-menu__link-center">Галерея</a></li>
+								<li class="nav-menu__item"><a href="#" class="nav-menu__link nav-menu__link-center">Отзывы</a></li>
+								<li class="nav-menu__item"><a href="#" class="nav-menu__link nav-menu__link-center">Как добраться</a></li>
+								<li class="nav-menu__item"><a href="#" class="nav-menu__link nav-menu__link-center">Контакты</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header__rightside">
+						<div class="header__rightside-top">
+							<div class="header__rightside-social-flex">
+								<a class="header__rightside-social-link" href="#"><i class="fab fa-vk"></i></a>
+								<a class="header__rightside-social-link" href="#"><i class="fab fa-instagram"></i></a>
+								<a class="header__rightside-social-link" href="#"><i class="fab fa-facebook"></i></a>
+							</div>
+						</div>
+						<a class="header__rigtside-tel" href="tel:+79099237334">8-909-923-73-34</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<section class="about">
+				<h2 class="about__title">О Нас</h2>
+				<p class="about-text">Кальянный клуб <span class="about__text_name">PUR PUR</span> приглашает отдохнуть на дымной мансарде в самом сердце Москвы. Вкусные долгие кальяны у камина, приставки и настольные игры, авторское меню и крафтовое пиво – у нас есть все для твоего идеального отдыха по разумной цене! Наш уютный лаунж удобно расположился в особняке на Маросейке в шаговой доступности от м.Китай-город. У нас всегда есть местечко для тебя!</p>
+			</section>
+		</div>
+	</main>
+
+
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+.container {
+	margin: 0 auto;
+	width: 1130px;
+}
+
+.header-top__logo {
+	width: 100px;
+	height: 100px;
+}
+
+.header-top__nav-menu {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 650px;
+}
+
+.header-top__leftside {
+	width: 160px;
+}
+
+.header-top {
+	display: flex;
+	justify-content: space-between;
+	height: 100px;
+	padding-top: 5px;
+	align-items: center;
+	padding: 0 15px;
+	position: absolute;
+	top: 0;
+	z-index: 10;
+	min-width: 1100px;
+
+}
+
+.header__rightside {
+	width: 160px;
+}
+
+.header-top__center {
+	width: 700px;
+}
+
+
+
+.nav-menu__link {
+	text-decoration: none;
+	color: white;
+	font-family: 'Russo One', sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+	height: 100%;
+	display: block;
+}
+
+.nav-menu__item {
+	height: 40px;
+	width: 135px;
+	text-align: center;
+}
+
+.nav-menu__link-center::before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+
+.nav-menu__item:nth-child(n+5) {
+	margin-top: 15px;
+}
+
+
+
+.header__rightside-social-link {
+	font-size: 30px;
+	color: white;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.header__rigtside-tel {
+	text-decoration: none;
+	font-family: Lato;
+	font-size: 20px;
+	color: white;
+}
+
+.header__rightside-social-flex {
+	display: flex;
+	justify-content: space-around;
+}
+
+.center-link {
+	padding-top: 4px;
+}
+
+.header__rightside-top {
+	margin-right: 10px;
+}
+
+
+/*СЛАЙДЕР НАЧАЛО*/
+
+#slides {
+	position: relative;
+	height: 250px;
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+}
+
+.slide {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	z-index: 1;
+
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+.showing {
+	opacity: 1;
+	z-index: 2;
+}
+
+.slide {
+	font-size: 40px;
+	padding: 40px;
+	box-sizing: border-box;
+	background: #333;
+	color: #fff;
+}
+
+.slide:nth-of-type(1) {
+	background-image: url(images/slider-1.jpg);
+	background-size: cover;
+
+}
+
+.slide:nth-of-type(2) {
+	background-image: url(images/slider-2.jpg);
+	background-size: cover;
+
+}
+
+.slide:nth-of-type(3) {
+	background-image: url(images/slider-3.jpg);
+	background-size: cover;
+
+}
+
+.slider {
+	position: relative;
+	z-index: 0;
+	
+}
+
+/*СЛАЙДЕР КОНЕЦ*/
+
+.nav-menu__link:hover {
+	background-color: white;
+	color: #ad05b2;
+	transition: all 0.4s ease;
+}
+
+.nav-menu__link:active {
+	opacity: 0.5;
+}
+
+.header__rightside-social-link:hover {
+	background-color: white;
+	color: #ad05b2;
+}
+
+.header__rigtside-tel:hover {
+	background-color: white;
+	color: #ad05b2;
+}
+
+.header-button__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    display: inline-block;
+    vertical-align: top;
+    border: 2px solid white;
+    padding: 10px;
+    width: 146px;
+    word-wrap: break-word;
+    text-align: center;
+    font-family:  'Russo One', sans-serif;
+    border-radius: 5px;
+}
+
+.header-button__link:hover {
+	background-color: white;
+	color: #ad05b2;
+}
+
+.header-button {
+	position: absolute;
+	top: 140px;
+	z-index: 10;
+	left: 0;
+}
+
+
+
+
+
+.about__title {
+	font-family: 'Russo One', sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 40px;
+}
+
+.about-text {
+	font-family: 'Russo One', sans-serif;
+	text-align: center;
+}
+
+.about__text_name {
+	color: #ad05b2;
+}
+
+.about {
+	margin-top: 40px;
+}
+
+
