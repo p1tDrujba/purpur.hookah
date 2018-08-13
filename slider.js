@@ -1,9 +1,14 @@
-var slides = document.querySelectorAll('#slides .slide');
-var currentSlide = 0;
-var slideInterval = setInterval(nextSlide,2000);
- 
-function nextSlide() {
-    slides[currentSlide].className = 'slide';
-    currentSlide = (currentSlide+1)%slides.length;
-    slides[currentSlide].className = 'slide showing';
-}
+$(function () {
+		"use strict";
+
+		$(".popup img").click(function () {
+			var $src = $(this).attr("src");
+			$(".show").fadeIn();
+			$(".img-show img").attr("src", $src);
+		});
+
+		$("span, .overlay").click(function () {
+			$(".show").fadeOut();
+		});
+
+	});
