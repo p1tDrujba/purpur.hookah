@@ -160,7 +160,7 @@
 
 }
 
-.slider {
+.sliderr {
 	position: relative;
 	z-index: 0;
 
@@ -220,7 +220,7 @@
 	text-transform: uppercase;
 	text-align: center;
 	font-size: 40px;
-	 text-shadow: 1px 1px #fff, 1px -1px #fff, -1px 1px #fff, -1px -1px #fff, 3px 3px 6px rgba(0,0,0,.5);
+	text-shadow: 1px 1px #fff, 1px -1px #fff, -1px 1px #fff, -1px -1px #fff, 3px 3px 6px rgba(0, 0, 0, .5);
 	color: #be5590;
 }
 
@@ -317,8 +317,8 @@
 .actions {
 	margin-top: 70px;
 	padding-top: 35px;
-/*	background: linear-gradient(to right, rgba(116, 0, 166, 1) 16%, rgba(130, 1, 169, 1) 24%, rgba(172, 5, 178, 1) 49%, rgba(172, 5, 178, 1) 100%);*/
-	background: -webkit-linear-gradient(0deg, rgba(126,17,66,1) 0%, rgba(224,25,127,1) 50%, rgba(161,19,87,1) 100%);
+	/*	background: linear-gradient(to right, rgba(116, 0, 166, 1) 16%, rgba(130, 1, 169, 1) 24%, rgba(172, 5, 178, 1) 49%, rgba(172, 5, 178, 1) 100%);*/
+	background: -webkit-linear-gradient(0deg, rgba(126, 17, 66, 1) 0%, rgba(224, 25, 127, 1) 50%, rgba(161, 19, 87, 1) 100%);
 	border-top: 15px solid #911089;
 	border-bottom: 15px solid #911089;
 	padding-bottom: 35px;
@@ -359,15 +359,18 @@
 }
 
 .popup-content {
-	width: 600px;
-	height: 634px;
+	height: 100%;
 	position: absolute;
 	z-index: 2;
-	top: -200px;
-	bottom: 0;
+	top: 0;
+	bottom: 20px;
 	left: 0;
 	right: 0;
 	margin: auto;
+	background-image: url(images/hookah-menu.jpg);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 .popup-shower {
@@ -383,18 +386,19 @@
 
 .popup-closer {
 	position: absolute;
-	top: 5px;
-	right: 10px;
+	top: 1%;
 	color: #fff;
-	font-size: 20px;
+	font-size: 150%;
 	display: block;
-	line-height: 20px;
 	text-align: center;
 	cursor: pointer;
-	top: 10px;
 	display: block;
 	font-family: 'Russo One', sans-serif;
-	width: 100px;
+	height: 30px;
+	padding: 0 5px;
+	width: 100%;
+	text-shadow: 1px 1px #fff, 1px -1px #fff, -1px 1px #fff, -1px -1px #fff, 3px 3px 6px rgba(0, 0, 0, .5);
+	color: #be5590;
 }
 
 
@@ -456,7 +460,7 @@
 	color: #00f;
 	cursor: pointer;
 	text-decoration: underline;
-	
+
 }
 
 .popup-shower2:hover {
@@ -477,7 +481,9 @@
 	font-family: 'Russo One', sans-serif;
 	height: 30px;
 	padding: 0 5px;
-	width: 100%
+	width: 100%;
+	text-shadow: 1px 1px #fff, 1px -1px #fff, -1px 1px #fff, -1px -1px #fff, 3px 3px 6px rgba(0, 0, 0, .5);
+	color: #be5590;
 }
 
 
@@ -485,7 +491,7 @@
 	content: "";
 	display: inline-block;
 	height: 100%;
-	vertical-align: middle; 
+	vertical-align: middle;
 }
 
 
@@ -504,6 +510,7 @@
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
+	padding: 0 50px;
 }
 
 
@@ -574,7 +581,7 @@
 }
 
 .galery-flex__rightside {
-		display: flex;
+	display: flex;
 	align-items: flex-start;
 	justify-content: flex-end;
 }
@@ -593,7 +600,7 @@
 
 .white {
 	color: #be5590;
-	 text-shadow: 1px 1px #fff, 1px -1px #fff, -1px 1px #fff, -1px -1px #fff, 3px 3px 6px rgba(0,0,0,.5);
+	text-shadow: 1px 1px #fff, 1px -1px #fff, -1px 1px #fff, -1px -1px #fff, 3px 3px 6px rgba(0, 0, 0, .5);
 }
 
 .gallery-header {
@@ -607,11 +614,180 @@
 	content: "";
 	display: inline-block;
 	height: 100%;
-	vertical-align: middle; 
-	
+	vertical-align: middle;
+
 }
 
 .border {
 	border-top: 15px solid #911089;
 	border-bottom: 15px solid #911089;
+}
+
+
+
+.galery__mini:hover {
+	cursor: pointer;
+	border: 2px solid white;
+	box-sizing: border-box;
+}
+
+.galery__mini:active {
+	filter: brightness(50%);
+}
+
+/* Собственно сам слайдер */
+
+.slider {
+	max-width: 100%;
+	position: relative;
+	margin: auto;
+	height: 100px;
+	margin-bottom: 15px;
+	background: -webkit-linear-gradient(0deg, rgba(126, 17, 66, 1) 0%, rgba(224, 25, 127, 1) 50%, rgba(161, 19, 87, 1) 100%);
+		border-top: 15px solid #911089;
+	border-bottom: 15px solid #911089;
+}
+
+/* Картинка мастабируется по отношению к родительскому элементу */
+
+.slider .item img {
+	object-fit: cover;
+	width: 100%;
+	height: 100px;
+	border: none !important;
+	box-shadow: none !important;
+}
+
+/* Кнопки вперед и назад */
+
+.slider .prev,
+.slider .next {
+	cursor: pointer;
+	position: absolute;
+	top: 10%;
+	width: auto;
+	height: 49%;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	display: flex;
+	align-items: center;
+}
+
+.slider .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* При наведении на кнопки добавляем фон кнопок */
+
+.slider .prev:hover,
+.slider .next:hover {
+	background-color: rgba(127, 15, 120, 0.8);
+}
+
+/* Заголовок слайда */
+
+.slideText {
+	color: #fff;
+	font-size: 35px;
+	/* Выравнивание текста по горизонтали и по вертикали*/
+	/* Тень*/
+	text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+	font-family:  'Ubuntu', sans-serif;
+	margin: 0;
+}
+
+/* Кружочки */
+
+.slider-dots {
+	text-align: center;
+}
+
+.slider-dots_item {
+	cursor: pointer;
+	height: 12px;
+	width: 12px;
+	margin: 0 2px;
+	background-color: #ddd;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active,
+.slider-dots_item:hover {
+	background-color: #aaa;
+}
+
+/* Анимация слайдов */
+
+.slider .item {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {
+		opacity: .4
+	}
+	to {
+		opacity: 1
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: .4
+	}
+	to {
+		opacity: 1
+	}
+}
+
+.face {
+	height: 100px;
+	width: 100px;
+	background-image: url(images/face-comments2.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	content: "";
+	background-position: center;
+}
+
+.flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 85px;
+}
+
+.slideText-mini {
+		color: #fff;
+	font-size: 20px;
+	font-family:  'Ubuntu', sans-serif;
+	margin: 0;
+}
+
+.slideText-all {
+	margin-left: 30px;
+}
+
+.face2 {
+		height: 100px;
+	width: 100px;
+	background-image: url(images/face-comments.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	content: "";
+	background-position: center;
+}
+
+.comments {
+	margin-top: 40px;
 }
