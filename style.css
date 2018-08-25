@@ -368,6 +368,7 @@
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
+	margin: 0 auto;
 }
 
 .popup-shower {
@@ -399,6 +400,7 @@
 	text-shadow: 1px 1px #fff, 1px -1px #fff, -1px 1px #fff, -1px -1px #fff, 3px 3px 6px rgba(0, 0, 0, .5);
 	color: #be5590;
 	font-weight: bold;
+	z-index: 222;
 }
 
 
@@ -1302,6 +1304,15 @@ div.error{
 
 .flex-popup {
 	display: flex;
+	justify-content: flex-end;
+	position: relative;
+	background-image: url(images/hookah-menu.jpg);
+	z-index: 10;
+	background-size: contain;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 700px;
 }
 
 .popup-wrapper {
