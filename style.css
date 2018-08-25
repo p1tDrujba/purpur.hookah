@@ -333,11 +333,11 @@
 }
 
 .popup {
-	position: fixed;
+	position: absolute;
 	z-index: 10;
-	top: 0;
-	left: 0;
-	width: 100%;
+	top: 9%;
+	left: 20%;
+	width: 700px;
 	height: 100%;
 	opacity: 0;
 }
@@ -345,7 +345,7 @@
 .popup:before {
 	display: block;
 	content: ' ';
-	position: absolute;
+	position: fixed;
 	z-index: 1;
 	width: 100%;
 	height: 100%;
@@ -357,14 +357,14 @@
 
 .popup-content {
 	height: 100%;
-	position: absolute;
+	position: relative;
 	z-index: 2;
 	top: 0;
 	left: 0;
 	right: 0;
 	margin: auto;
 	background-image: url(images/hookah-menu.jpg);
-	background-position: center;
+	background-position: top;
 	background-size: contain;
 	background-repeat: no-repeat;
 }
@@ -384,8 +384,8 @@
 
 .popup-closer {
 	position: absolute;
-	right: 0;
 	top: 0;
+	right: 3%;
 	color: #fff;
 	font-size: 3em;
 	display: block;
@@ -395,10 +395,20 @@
 	font-family: 'Montserrat', sans-serif;
 	height: 30px;
 	padding: 0 5px;
-	/*	width: 100%;*/
 	text-shadow: 1px 1px #fff, 1px -1px #fff, -1px 1px #fff, -1px -1px #fff, 3px 3px 6px rgba(0, 0, 0, .5);
 	color: #be5590;
 	font-weight: bold;
+	/*
+	display: flex;
+	position: absolute;
+	top: 20%;
+	height: 30%;
+	margin: 0 auto;
+	margin-top: 5%;
+	justify-content: center;
+	align-content: center;
+	z-index: 222;
+*/
 }
 
 
@@ -427,6 +437,7 @@
 }
 
 .popup2 {
+	/*
 	position: fixed;
 	z-index: 10;
 	top: 0;
@@ -434,12 +445,20 @@
 	width: 100%;
 	height: 100%;
 	opacity: 0;
+*/
+	position: absolute;
+	z-index: 10;
+	top: 9%;
+	left: 20%;
+	width: 700px;
+	height: 100%;
+	opacity: 0;
 }
 
 .popup2:before {
 	display: block;
 	content: ' ';
-	position: absolute;
+	position: fixed;
 	z-index: 1;
 	width: 100%;
 	height: 100%;
@@ -451,14 +470,14 @@
 
 .popup-content2 {
 	height: 100%;
-	position: absolute;
+	position: relative;
 	z-index: 2;
 	top: 0;
 	left: 0;
 	right: 0;
 	margin: auto;
 	background-image: url(images/food-menu2.jpg);
-	background-position: center;
+	background-position: top;
 	background-size: contain;
 	background-repeat: no-repeat;
 }
@@ -478,7 +497,7 @@
 
 .popup-closer2 {
 	position: absolute;
-	right: 0;
+	right: 2%;
 	top: 0;
 	color: #fff;
 	font-size: 3em;
@@ -520,11 +539,11 @@
 }
 
 .popup3 {
-	position: fixed;
+	position: absolute;
 	z-index: 10;
-	top: 0;
-	left: 0;
-	width: 100%;
+	top: 9%;
+	left: 20%;
+	width: 700px;
 	height: 100%;
 	opacity: 0;
 }
@@ -532,7 +551,7 @@
 .popup3:before {
 	display: block;
 	content: ' ';
-	position: absolute;
+	position: fixed;
 	z-index: 1;
 	width: 100%;
 	height: 100%;
@@ -543,6 +562,7 @@
 }
 
 .popup-content3 {
+	/*
 	height: 100%;
 	position: absolute;
 	z-index: 2;
@@ -552,6 +572,18 @@
 	margin: auto;
 	background-image: url(images/tea-menu2.jpg);
 	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+*/
+	height: 100%;
+	position: relative;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background-image: url(images/tea-menu2.jpg);
+	background-position: top;
 	background-size: contain;
 	background-repeat: no-repeat;
 }
@@ -571,8 +603,8 @@
 
 .popup-closer3 {
 	position: absolute;
-	right: 0;
-	top: 0;
+	right: 2%;
+	top: 2%;
 	color: #fff;
 	font-size: 3em;
 	display: block;
@@ -611,11 +643,11 @@
 }
 
 .popup4 {
-	position: fixed;
+	position: absolute;
 	z-index: 10;
-	top: 0;
-	left: 0;
-	width: 100%;
+	top: 9%;
+	left: 20%;
+	width: 700px;
 	height: 100%;
 	opacity: 0;
 }
@@ -623,7 +655,7 @@
 .popup4:before {
 	display: block;
 	content: ' ';
-	position: absolute;
+	position: fixed;
 	z-index: 1;
 	width: 100%;
 	height: 100%;
@@ -634,6 +666,7 @@
 }
 
 .popup-content4 {
+	/*
 	height: 100%;
 	position: absolute;
 	z-index: 2;
@@ -643,6 +676,18 @@
 	margin: auto;
 	background-image: url(images/bar-menu.jpg);
 	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+*/
+	height: 100%;
+	position: relative;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background-image: url(images/bar-menu.jpg);
+	background-position: top;
 	background-size: contain;
 	background-repeat: no-repeat;
 }
@@ -662,8 +707,8 @@
 
 .popup-closer4 {
 	position: absolute;
-	right: 0;
-	top: 0;
+	right: 2%;
+	top: 2%;
 	color: #fff;
 	font-size: 3em;
 	display: block;
@@ -704,6 +749,7 @@
 	justify-content: space-around;
 	flex-wrap: wrap;
 	padding: 0 50px;
+	position: relative;
 }
 
 
@@ -1045,7 +1091,7 @@
 
 
 .adress {
-/*	width: 250px;*/
+	/*	width: 250px;*/
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -1053,14 +1099,14 @@
 }
 
 .e-mail {
-/*	width: 220px;*/
+	/*	width: 220px;*/
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
 .phone {
-/*	width: 220px;*/
+	/*	width: 220px;*/
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -1152,43 +1198,44 @@
 }
 
 /*feedback*/
-.popup_bg{
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: #211722;
-    z-index: 2000;
-    display: none;
-    cursor: pointer;
-    opacity: 0.75;
+
+.popup_bg {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: #211722;
+	z-index: 2000;
+	display: none;
+	cursor: pointer;
+	opacity: 0.75;
 }
 
-.popup_window{
-    width: 545px;
-    padding: 6px;
-    background: #D7D7D7;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    position: absolute;
-    z-index: 2001;
-    display: none;
+.popup_window {
+	width: 545px;
+	padding: 6px;
+	background: #D7D7D7;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	position: absolute;
+	z-index: 2001;
+	display: none;
 	position: absolute;
 	left: 26%;
 }
 
-.popup_window__title{
-    height: 47px;
-    padding-top: 30px;
-    text-align: center;
-    color: #010506;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 22px;
+.popup_window__title {
+	height: 47px;
+	padding-top: 30px;
+	text-align: center;
+	color: #010506;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 22px;
 }
 
-.popup_window__content{
+.popup_window__content {
 	/*
     border: 4px solid #f6f6f6;
     border-radius: 5px;
@@ -1197,10 +1244,10 @@
     padding: 20px;
     background: #ffffff;
     */
-    text-align: center;
+	text-align: center;
 }
 
-.popup_window__input{
+.popup_window__input {
 	/*
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -1209,7 +1256,7 @@
     border:1px solid #000;
     padding: 5px;
     */
-    border: 1px solid #CACACA;
+	border: 1px solid #CACACA;
 	width: 396px;
 	height: 48px;
 	color: #8C8C8C;
@@ -1221,20 +1268,19 @@
 }
 
 .popup_window__input.valid_field,
-.static_window__input.valid_field{
+.static_window__input.valid_field {}
 
+.error_field {
+	border-color: #ff0000 !important;
 }
 
-.error_field{
-    border-color: #ff0000 !important;
-}
-div.error{
-    display: none;
-    height: 16px;
-    margin-top: -8px;
-    margin-bottom: -8px;
-    margin-left: 10px;
-    color: red;
+div.error {
+	display: none;
+	height: 16px;
+	margin-top: -8px;
+	margin-bottom: -8px;
+	margin-left: 10px;
+	color: red;
 }
 
 .btn_submit_form {
@@ -1257,6 +1303,7 @@ div.error{
 .btn_submit_form:hover {
 	background: url(images/popup-btn-focus.png) no-repeat 0 0;
 }
+
 .btn_submit_form:active {
 	background: url(images/popup-btn-unfocus.png) no-repeat 0 0;
 }
@@ -1319,9 +1366,4 @@ div.error{
 	background-repeat: no-repeat;
 	background-position: center;
 	width: 700px;
-}
-
-.popup-wrapper {
-	display: flex;
-	justify-content: center;
 }
