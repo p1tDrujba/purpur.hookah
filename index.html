@@ -62,26 +62,27 @@
 		</div>
 	</header>
 	<div class="button">
-		<div class="container center">
-			<div class="header-button">
-				<a class="header-button__link feedback-btn popup_button" href="#" rel="order_call_window">Заказать столик</a>
-			</div>
-			<div class="popup_bg"></div>
-			<div class="popup_window" id="order_call_window">
-				<div class="popup_window__title">Заказажите обратный звонок для уточнения брони</div>
-				<div class="popup_window__content">
-					<form action="index1.php" method="post" id="order_call_form">
-						<input class="popup_window__input" type="text" name="name" placeholder="Ваше имя" />
-						<input class="popup_window__input" type="text" name="phone" placeholder="Ваш телефон" />
-						<input class="popup_window__input" type="text" name="time" placeholder="Желаемое время посещения" />
+		<div class="container">
+			<div class="center">
+				<div class="header-button">
+					<a class="header-button__link feedback-btn popup_button" href="#" rel="order_call_window">Заказать столик</a>
+				</div>
+				<div class="popup_bg"></div>
+				<div class="popup_window" id="order_call_window">
+					<div class="popup_window__title">Заказажите обратный звонок для уточнения брони</div>
+					<div class="popup_window__content">
+						<form action="index1.php" method="post" id="order_call_form">
+							<input class="popup_window__input" type="text" name="name" placeholder="Ваше имя" />
+							<input class="popup_window__input" type="text" name="phone" placeholder="Ваш телефон" />
+							<input class="popup_window__input" type="text" name="time" placeholder="Желаемое время и дату посещения" />
 
-						<input type="submit" class="btn_submit_form" value="Отправить заявку" />
-					</form>
+							<input type="submit" class="btn_submit_form" value="Отправить заявку" />
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
 	<main>
 		<section id="about" class="about-us">
 			<div class="container">
@@ -147,157 +148,159 @@
 				</div>
 			</div>
 		</section>
-		<section id="menu" class="menu">
-			<div class="container">
-				<h3 class="about__title">Меню</h3>
-				<div class="menu-flex">
-					<div class="hookah-menu">
-						<div class="popup-wrapper">
-							<input type="checkbox" class="popup-checkbox" id="popupCheckboxOne">
-							<div class="popup">
-								<div class="popup-content">
-									<label for="popupCheckboxOne" class="popup-closer">Закрыть</label>
-								</div>
-							</div>
-						</div>
-						<label for="popupCheckboxOne" class="popup-shower"><img class="border" src="images/hookah-menu2.jpg" width="400"></label>
-
-					</div>
-					<div class="food-menu">
-						<div class="popup-wrapper2">
-							<input type="checkbox" class="popup-checkbox2" id="popupCheckboxOne2">
-							<div class="popup2">
-								<div class="popup-content2">
-									<label for="popupCheckboxOne2" class="popup-closer2">Закрыть</label>
-								</div>
-							</div>
-						</div>
-						<label for="popupCheckboxOne2" class="popup-shower2"><img class="border" src="images/food-menu2.jpg" width="400"></label>
-					</div>
-					<div class="tea-menu">
-						<div class="popup-wrapper3">
-							<input type="checkbox" class="popup-checkbox3" id="popupCheckboxOne3">
-							<div class="popup3">
-								<div class="popup-content3">
-									<label for="popupCheckboxOne3" class="popup-closer3">Закрыть</label>
-								</div>
-							</div>
-						</div>
-						<label for="popupCheckboxOne3" class="popup-shower3"><img class="border" src="images/tea-menu2.jpg" width="400"></label>
-					</div>
-					<div class="beer-menu">
-						<div class="popup-wrapper4">
-							<input type="checkbox" class="popup-checkbox4" id="popupCheckboxOne4">
-							<div class="popup4">
-								<div class="popup-content4">
-									<label for="popupCheckboxOne4" class="popup-closer4">Закрыть</label>
-								</div>
-							</div>
-						</div>
-						<label for="popupCheckboxOne4" class="popup-shower4"><img class="border" src="images/bar-menu.jpg" width="400
-						"></label>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="gallery" class="gallery">
-			<div class="container">
-				<h3 class="about__title white gallery-header">Галерея</h3>
-				<h3 class="about__title little white instagram">Больше фото в нашем <a class="instagram-link" href="https://www.instagram.com/purpur.hookah/" target="_blank">instagram</a></h3>
-				<div class="gallery__titles-flex">
-					<h3 class="about__title little white">Наши гости</h3>
-					<h3 class="about__title little white">Наш клуб</h3>
-				</div>
-				<div class="gallery__flex">
-					<div class="gellery__leftside">
-						<div>
-							<p style='text-align: left;'>
-								<img class="galery__img " id='bigimg' src='images/galery-main.jpg' height='400' alt='Главное изображение'>
-							</p>
-						</div>
-						<div class="galery-flex">
-							<img class="galery__img galery__mini" src="images/galery-main.jpg" width="100" onclick='setBigImage(this)' alt="Изображение 1">
-							<img class="galery__img galery__mini" src="images/galery-2.jpg" width="100" onclick='setBigImage(this)' alt="Изображение 1">
-							<img class="galery__img galery__mini" src="images/galery-3.jpg" width="100" onclick='setBigImage(this)' alt="Изображение 1">
-							<img class="galery__img galery__mini" src="images/galery-4.jpg" width="100" onclick='setBigImage(this)' alt="Изображение 1">
-							<img class="galery__img galery__mini" src="images/galery-5.jpg" width="100" onclick='setBigImage(this)' alt="Изображение 1">
-						</div>
-					</div>
-					<div class="gellery__rigtside">
-						<div>
-							<p style='text-align: right;'>
-								<img class="galery__img " id='bigimg2' src='images/galery-main2.jpg' height='400' alt='Главное изображение'>
-							</p>
-						</div>
-						<div class="galery-flex__rightside">
-							<img class="galery__img galery__mini" src="images/galery-main2.jpg" width="100" onclick='setBigImage2(this)' alt="Изображение 1">
-							<img class="galery__img galery__mini" src="images/galery-22.jpg" width="100" onclick='setBigImage2(this)' alt="Изображение 1">
-							<img class="galery__img galery__mini" src="images/galery-33.jpg" width="100" onclick='setBigImage2(this)' alt="Изображение 1">
-							<img class="galery__img galery__mini" src="images/galery-44.jpg" width="100" onclick='setBigImage2(this)' alt="Изображение 1">
-							<img class="galery__img galery__mini" src="images/galery-55.jpg" width="100" onclick='setBigImage2(this)' alt="Изображение 1">
-						</div>
-					</div>
-				</div>
-			</div>
-			<script>
-				function setBigImage(foto) {
-					document.getElementById("bigimg").src = foto.src;
-				}
-
-			</script>
-			<script>
-				function setBigImage2(foto) {
-					document.getElementById("bigimg2").src = foto.src;
-				}
-
-			</script>
-			<section id="comments" class="comments">
+		<div class="background-menu-gallery">
+			<section id="menu" class="menu">
 				<div class="container">
-					<div class="slider">
-						<div class="item">
-							<div class="flex">
-								<div class="face"></div>
-								<div class="slideText-all">
-									<h4 class="slideText">Александра</h4>
-									<p class="slideText-mini">Очень уютная атмосфера и приятное обслуживание, вкусные кальяны и хорошие цены</p>
+					<h3 class="about__title">Меню</h3>
+					<div class="menu-flex">
+						<div class="hookah-menu">
+							<div class="popup-wrapper">
+								<input type="checkbox" class="popup-checkbox" id="popupCheckboxOne">
+								<div class="popup">
+									<div class="popup-content">
+										<label for="popupCheckboxOne" class="popup-closer">Закрыть</label>
+									</div>
 								</div>
 							</div>
-						</div>
+							<label for="popupCheckboxOne" class="popup-shower"><img class="border" src="images/hookah-menu2.jpg" width="400"></label>
 
-						<div class="item">
-							<div class="flex">
-								<div class="face2"></div>
-								<div class="slideText-all">
-									<h4 class="slideText">Мария</h4>
-									<p class="slideText-mini">Замечательная кальянная! Супер приветливый персонал! Доступные цены! Обслуживание на высоком уровне! Разнообразный ассортимент табака. Всем советую. Придём ещё не раз!!!</p>
+						</div>
+						<div class="food-menu">
+							<div class="popup-wrapper2">
+								<input type="checkbox" class="popup-checkbox2" id="popupCheckboxOne2">
+								<div class="popup2">
+									<div class="popup-content2">
+										<label for="popupCheckboxOne2" class="popup-closer2">Закрыть</label>
+									</div>
 								</div>
 							</div>
+							<label for="popupCheckboxOne2" class="popup-shower2"><img class="border" src="images/food-menu2.jpg" width="400"></label>
 						</div>
-
-						<div class="item">
-							<div class="flex">
-								<div class="face3"></div>
-								<div class="slideText-all">
-									<h4 class="slideText">Таша</h4>
-									<p class="slideText-mini">Была с подругами на прошлых выходных. Очень понравилось. Уютно, вкусно, классный кальян. Зачетная музыка. Крутые ребята там работают, спасибо! Думаю скоро встретимся! =)</p>
+						<div class="tea-menu">
+							<div class="popup-wrapper3">
+								<input type="checkbox" class="popup-checkbox3" id="popupCheckboxOne3">
+								<div class="popup3">
+									<div class="popup-content3">
+										<label for="popupCheckboxOne3" class="popup-closer3">Закрыть</label>
+									</div>
 								</div>
 							</div>
+							<label for="popupCheckboxOne3" class="popup-shower3"><img class="border" src="images/tea-menu2.jpg" width="400"></label>
 						</div>
-
-						<a class="prev" onclick="minusSlide()">&#10094;</a>
-						<a class="next" onclick="plusSlide()">&#10095;</a>
+						<div class="beer-menu">
+							<div class="popup-wrapper4">
+								<input type="checkbox" class="popup-checkbox4" id="popupCheckboxOne4">
+								<div class="popup4">
+									<div class="popup-content4">
+										<label for="popupCheckboxOne4" class="popup-closer4">Закрыть</label>
+									</div>
+								</div>
+							</div>
+							<label for="popupCheckboxOne4" class="popup-shower4"><img class="border" src="images/bar-menu.jpg" width="400
+						"></label>
+						</div>
 					</div>
-					<h3 class="about__title little white instagram">Понравилось? <a class="instagram-link" href="https://yandex.ru/maps/org/pur_pur/40899980588/" target="_blank">Оставьте отзыв!</a></h3>
 				</div>
 			</section>
-			<div id="map" class="map-block">
-				<div class="container sas">
-					<a class="adress-link" href="https://yandex.ru/maps/213/moscow/?ll=37.636556%2C55.757541&z=18&mode=search&ol=biz&oid=40899980588" target="_blank">
+			<section id="gallery" class="gallery">
+				<div class="container">
+					<h3 class="about__title white gallery-header">Галерея</h3>
+					<h3 class="about__title little white instagram">Больше фото в нашем <a class="instagram-link" href="https://www.instagram.com/purpur.hookah/" target="_blank">instagram</a></h3>
+					<div class="gallery__titles-flex">
+						<h3 class="about__title little white">Наши гости</h3>
+						<h3 class="about__title little white">Наш клуб</h3>
+					</div>
+					<div class="gallery__flex">
+						<div class="gellery__leftside">
+							<div>
+								<p style='text-align: left;'>
+									<img class="galery__img " id='bigimg' src='images/galery-main.jpg' height='400' alt='Главное изображение'>
+								</p>
+							</div>
+							<div class="galery-flex">
+								<img class="galery__img galery__mini" src="images/galery-main.jpg" width="100" onclick='setBigImage(this)' alt="Изображение 1">
+								<img class="galery__img galery__mini" src="images/galery-2.jpg" width="100" onclick='setBigImage(this)' alt="Изображение 1">
+								<img class="galery__img galery__mini" src="images/galery-3.jpg" width="100" onclick='setBigImage(this)' alt="Изображение 1">
+								<img class="galery__img galery__mini" src="images/galery-4.jpg" width="100" onclick='setBigImage(this)' alt="Изображение 1">
+								<img class="galery__img galery__mini" src="images/galery-5.jpg" width="100" onclick='setBigImage(this)' alt="Изображение 1">
+							</div>
+						</div>
+						<div class="gellery__rigtside">
+							<div>
+								<p style='text-align: right;'>
+									<img class="galery__img " id='bigimg2' src='images/galery-main2.jpg' height='400' alt='Главное изображение'>
+								</p>
+							</div>
+							<div class="galery-flex__rightside">
+								<img class="galery__img galery__mini" src="images/galery-main2.jpg" width="100" onclick='setBigImage2(this)' alt="Изображение 1">
+								<img class="galery__img galery__mini" src="images/galery-22.jpg" width="100" onclick='setBigImage2(this)' alt="Изображение 1">
+								<img class="galery__img galery__mini" src="images/galery-33.jpg" width="100" onclick='setBigImage2(this)' alt="Изображение 1">
+								<img class="galery__img galery__mini" src="images/galery-44.jpg" width="100" onclick='setBigImage2(this)' alt="Изображение 1">
+								<img class="galery__img galery__mini" src="images/galery-55.jpg" width="100" onclick='setBigImage2(this)' alt="Изображение 1">
+							</div>
+						</div>
+					</div>
+				</div>
+				<script>
+					function setBigImage(foto) {
+						document.getElementById("bigimg").src = foto.src;
+					}
+
+				</script>
+				<script>
+					function setBigImage2(foto) {
+						document.getElementById("bigimg2").src = foto.src;
+					}
+
+				</script>
+				<section id="comments" class="comments">
+					<div class="container">
+						<div class="slider">
+							<div class="item">
+								<div class="flex">
+									<div class="face"></div>
+									<div class="slideText-all">
+										<h4 class="slideText">Александра</h4>
+										<p class="slideText-mini">Очень уютная атмосфера и приятное обслуживание, вкусные кальяны и хорошие цены</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="item">
+								<div class="flex">
+									<div class="face2"></div>
+									<div class="slideText-all">
+										<h4 class="slideText">Мария</h4>
+										<p class="slideText-mini">Замечательная кальянная! Супер приветливый персонал! Доступные цены! Обслуживание на высоком уровне! Разнообразный ассортимент табака. Всем советую. Придём ещё не раз!!!</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="item">
+								<div class="flex">
+									<div class="face3"></div>
+									<div class="slideText-all">
+										<h4 class="slideText">Таша</h4>
+										<p class="slideText-mini">Была с подругами на прошлых выходных. Очень понравилось. Уютно, вкусно, классный кальян. Зачетная музыка. Крутые ребята там работают, спасибо! Думаю скоро встретимся! =)</p>
+									</div>
+								</div>
+							</div>
+
+							<a class="prev" onclick="minusSlide()">&#10094;</a>
+							<a class="next" onclick="plusSlide()">&#10095;</a>
+						</div>
+						<h3 class="about__title little white instagram">Понравилось? Оставьте отзыв <a class="instagram-link" href="https://yandex.ru/maps/org/pur_pur/40899980588/" target="_blank">здесь!</a></h3>
+					</div>
+				</section>
+				<div id="map" class="map-block">
+					<div class="container sas">
+						<a class="map-link" href="https://yandex.ru/maps/213/moscow/?ll=37.636556%2C55.757541&z=18&mode=search&ol=biz&oid=40899980588" target="_blank">
 					<img class="map" src="images/map.jpg">
 					</a>
+					</div>
 				</div>
-			</div>
-		</section>
+			</section>
+		</div>
 	</main>
 	<footer id="contacts" class="footer">
 		<div class="container">
@@ -324,7 +327,7 @@
 						<i class="fas fa-map-marker-alt"></i>
 					</div>
 					<h4 class="footer-title">Адрес</h4>
-					<a class="adress-link" href="https://yandex.ru/maps/213/moscow/?ll=37.636556%2C55.757541&z=18&mode=search&ol=biz&oid=40899980588" target="_blank">
+					<a class="adress-link" href="https://www.google.ru/maps/place/PUR+PUR+%D0%BA%D0%B0%D0%BB%D1%8C%D1%8F%D0%BD%D0%BD%D1%8B%D0%B9+%D0%BA%D0%BB%D1%83%D0%B1/@55.7575491,37.6354382,18z/data=!3m1!4b1!4m5!3m4!1s0x46b54b53d0b91375:0x3345beec6b68155f!8m2!3d55.7575491!4d37.6365325" target="_blank">
 						<p>г. Москва ул. Маросейка д. 8</p>
 					</a>
 				</div>
@@ -336,9 +339,12 @@
 					<p class="footer-text">purpur.hookah@gmail.com</p>
 					<a class="header-button__link bottom-button feedback-btn popup_button" href="#" rel="order_call_window">Заказать столик</a>
 				</div>
+				<div class="button-up">
+					<a href="#header" class="up">Наверх</a>
+				</div>
 			</div>
 		</div>
-		<a href="#header" class="up">Наверх</a>
+		<!--		<a href="#header" class="up">Наверх</a>-->
 	</footer>
 
 	<script src="slider.js"></script>
