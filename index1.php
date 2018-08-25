@@ -5,7 +5,7 @@
   if (isset($_POST['time'])) {$time = $_POST['time'];}
 
 /* Сюда впишите свою эл. почту */
- $address = "info@purpurhookah.ru";
+ $address = "purpur.hookah@gmail.com";
 
 /* А здесь прописывается текст сообщения, \n - перенос строки */
  $mes = "Тема: Заказ обратного звонка\nТелефон: $phone\nИмя: $name\nЖелаемое время: $time";
