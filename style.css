@@ -330,7 +330,6 @@
 .popup-checkbox,
 .popup {
 	display: none;
-	padding-left: 30%;
 }
 
 .popup {
@@ -357,9 +356,9 @@
 }
 
 .popup-content {
-    height: 100%;
+	height: 100%;
 	position: absolute;
-	z-index: 2222;
+	z-index: 2;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -368,29 +367,29 @@
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
-	margin: 0 auto;
 }
 
 .popup-shower {
 	color: #00f;
 	cursor: pointer;
 	text-decoration: underline;
+
 }
 
 .popup-shower:hover {
 	color: #00a;
 	text-decoration: underline;
+
 }
 
 .popup-closer {
-	display: block;
 	position: absolute;
-	right: 2%;
-	top: 1%;
+	right: 0;
+	top: 0;
 	color: #fff;
 	font-size: 3em;
 	display: block;
-	text-align: right;
+	text-align: center;
 	cursor: pointer;
 	display: block;
 	font-family: 'Montserrat', sans-serif;
@@ -400,7 +399,14 @@
 	text-shadow: 1px 1px #fff, 1px -1px #fff, -1px 1px #fff, -1px -1px #fff, 3px 3px 6px rgba(0, 0, 0, .5);
 	color: #be5590;
 	font-weight: bold;
-	z-index: 222;
+}
+
+
+.popup-closer::before {
+	content: "";
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
 }
 
 
