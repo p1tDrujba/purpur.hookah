@@ -55,7 +55,7 @@
 								<a class="header__rightside-social-link" href="https://www.facebook.com/purpur.hookah/" target="_blank"><i class="fab fa-facebook"></i></a>
 							</div>
 						</div>
-						<a class="header__rigtside-tel" href="tel:+79019033669">8-901-903-36-69</a>
+						<a class="header__rigtside-tel" href="tel:+79019033669">+7(901)903-36-69</a>
 					</div>
 				</div>
 			</div>
@@ -65,7 +65,7 @@
 		<div class="container">
 			<div class="center">
 				<div class="header-button">
-					<a class="header-button__link feedback-btn popup_button" href="#" rel="order_call_window">Заказать столик</a>
+					<a class="header-button__link feedback-btn popup_button" href="#order_call_window" rel="order_call_window">Заказать столик</a>
 				</div>
 				<div class="popup_bg"></div>
 				<div class="popup_window" id="order_call_window">
@@ -74,7 +74,8 @@
 						<form action="index1.php" method="post" id="order_call_form">
 							<input class="popup_window__input" type="text" name="name" placeholder="Ваше имя" />
 							<input class="popup_window__input" type="text" name="phone" placeholder="Ваш телефон" />
-							<input class="popup_window__input" type="text" name="time" placeholder="Время и дата посещения" />
+							<input class="popup_window__input" type="text" name="time" placeholder="Время посещения" />
+							<input class="popup_window__input" type="text" name="date" placeholder="Дата посещения" />
 
 							<input type="submit" class="btn_submit_form" value="Отправить заявку" />
 						</form>
@@ -95,13 +96,14 @@
 		<section id="actions" class="actions">
 			<div class="container">
 				<div class="background-actions">
-					<h2 class="actions__title">Акции</h2>
+					<!--					<h2 class="actions__title">Акции</h2>-->
+					<h2 class="about__title">Акции</h2>
 					<div class="actions__top">
 						<div class="actions__leftside">
 							<img class="action_img" src="images/happyhours.jpg" alt="happy hours action">
 							<div class="actions__description">
 								<h3 class="actions__description-title">Счастливые часы</h3>
-								<p class="actions-description-text">Каждый день с 12 до 17.<br> Кальян стандарт 600 рублей<br>Кальян премиум 900 ₽
+								<p class="actions-description-text">Каждый день с 12 до 17.<br> Кальян стандарт 600 ₽<br>Кальян премиум 900 ₽
 								</p>
 							</div>
 						</div>
@@ -121,7 +123,8 @@
 							</div>
 						</div>
 					</div>
-					<h2 class="actions__title actions__margin">Мероприятия</h2>
+					<!--					<h2 class="actions__title actions__margin">Мероприятия</h2>-->
+					<h2 class="about__title actions__margin">Мероприятия</h2>
 					<div class="actions__bottom">
 						<div class="actions__leftside">
 							<img class="action_img" src="images/timetoplay.jpg" alt="time to play action">
@@ -134,14 +137,14 @@
 							<img class="action_img" src="images/fruitparty.jpg" alt="fruit party action">
 							<div class="actions__description">
 								<h3 class="actions__description-title">Фруктовые вечеринки</h3>
-								<p class="actions-description-text">Скидки на фруктовые кальяны! Следи за свежими SALE в <a class="instagram-link-white" href="#">Инстаграм!</a></p>
+								<p class="actions-description-text">Скидки на фруктовые кальяны! Следи за свежими SALE в <a class="instagram-link-white" href="https://www.instagram.com/purpur.hookah/" target="_blank">Инстаграм!</a></p>
 							</div>
 							<div class="actions-rightside"></div>
 						</div>
 						<div class="actions__rightside"> <img class="action_img" src="images/livemusic.jpg" alt="live music action">
 							<div class="actions__description">
 								<h3 class="actions__description-title">Живая музыка</h3>
-								<p class="actions-description-text">Кавер-вечера в PUR PUR! Следи за анонсами в <a class="instagram-link-white" href="#">Инстаграм!</a></p>
+								<p class="actions-description-text">Кавер-вечера в PUR PUR! Следи за анонсами в <a class="instagram-link-white" href="https://www.instagram.com/purpur.hookah/" target="_blank">Инстаграм!</a></p>
 							</div>
 						</div>
 					</div>
@@ -157,9 +160,9 @@
 							<div class="popup-wrapper">
 								<input type="checkbox" class="popup-checkbox" id="popupCheckboxOne">
 								<div class="popup">
-										<div class="popup-content">
-											<label for="popupCheckboxOne" class="popup-closer">x</label>
-										</div>
+									<div class="popup-content">
+										<label for="popupCheckboxOne" class="popup-closer">x</label>
+									</div>
 								</div>
 							</div>
 							<label for="popupCheckboxOne" class="popup-shower"><img class="border" src="images/hookah-menu2.jpg" width="400"></label>
@@ -228,12 +231,12 @@
 						<div class="gellery__rigtside">
 							<div>
 								<p style='text-align: right;'>
-									<img class="galery__img " id='bigimg2' src='images/galery-main2.jpg' height='400' alt='Главное изображение'>
+									<img class="galery__img " id='bigimg2' src='images/galery-22.jpg' height='400' alt='Главное изображение'>
 								</p>
 							</div>
 							<div class="galery-flex__rightside">
-								<img class="galery__img galery__mini" src="images/galery-main2.jpg" width="100" onclick='setBigImage2(this)' alt="Изображение 1">
 								<img class="galery__img galery__mini" src="images/galery-22.jpg" width="100" onclick='setBigImage2(this)' alt="Изображение 1">
+								<img class="galery__img galery__mini" src="images/galery-main2.jpg" width="100" onclick='setBigImage2(this)' alt="Изображение 1">
 								<img class="galery__img galery__mini" src="images/galery-33.jpg" width="100" onclick='setBigImage2(this)' alt="Изображение 1">
 								<img class="galery__img galery__mini" src="images/galery-44.jpg" width="100" onclick='setBigImage2(this)' alt="Изображение 1">
 								<img class="galery__img galery__mini" src="images/galery-55.jpg" width="100" onclick='setBigImage2(this)' alt="Изображение 1">
@@ -260,7 +263,7 @@
 								<div class="flex">
 									<div class="face"></div>
 									<div class="slideText-all">
-										<h4 class="slideText">Александра</h4>
+										<h4 class="slideText">Карина</h4>
 										<p class="slideText-mini">Очень уютная атмосфера и приятное обслуживание, вкусные кальяны и хорошие цены</p>
 									</div>
 								</div>
@@ -293,10 +296,16 @@
 					</div>
 				</section>
 				<div id="map" class="map-block">
+					<!--
 					<div class="container sas">
 						<a class="map-link" href="https://yandex.ru/maps/213/moscow/?ll=37.636556%2C55.757541&z=18&mode=search&ol=biz&oid=40899980588" target="_blank">
 					<img class="map" src="images/map.jpg">
 					</a>
+					</div>
+-->
+				<h3 class="about__title">Наше местоположение</h3>
+					<div class="map-flex">
+						<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A81fdc121c7cc0ba5a7a4fa66e65ec452c057ca70b62c9c4cbbfa1b03bada8db7&amp;width=1130&amp;height=250&amp;lang=ru_RU&amp;scroll=true"></script>
 					</div>
 				</div>
 			</section>
@@ -310,7 +319,7 @@
 						<i class="fas fa-phone-square"></i>
 					</div>
 					<h4 class="footer-title">Позвони нам</h4>
-					<a class="header__rigtside-tel" href="tel:+79019033669">8-901-903-36-69</a>
+					<a class="header__rigtside-tel" href="tel:+79019033669">+7(901)903-36-69</a>
 					<div class="header__rightside">
 						<div class="header__rightside-top">
 							<div class="header__rightside-social-flex">
@@ -337,7 +346,7 @@
 					</div>
 					<h4 class="footer-title">Наш E-mail</h4>
 					<p class="footer-text">purpur.hookah@gmail.com</p>
-					<a class="header-button__link bottom-button feedback-btn popup_button" href="#" rel="order_call_window">Заказать столик</a>
+					<a class="header-button__link bottom-button feedback-btn popup_button" href="#order_call_window" rel="order_call_window">Заказать столик</a>
 				</div>
 				<div class="button-up">
 					<a href="#header" class="up">Наверх</a>
@@ -348,6 +357,7 @@
 	</footer>
 
 	<script src="slider.js"></script>
+	
 	<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {

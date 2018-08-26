@@ -3,12 +3,13 @@
   if (isset($_POST['phone'])) {$phone = $_POST['phone'];}
  if (isset($_POST['name'])) {$name = $_POST['name'];}
   if (isset($_POST['time'])) {$time = $_POST['time'];}
+if (isset($_POST['date'])) {$date = $_POST['date'];}
 
 /* Сюда впишите свою эл. почту */
  $address = "info@purpurhookah.ru";
 
 /* А здесь прописывается текст сообщения, \n - перенос строки */
- $mes = "Тема: Заказ обратного звонка\nТелефон: $phone\nИмя: $name\nЖелаемое время: $time";
+ $mes = "Тема: Заказ обратного звонка\nТелефон: $phone\nИмя: $name\nВремя посещения: $time\nДата посещения: $date";
 
 /* А эта функция как раз занимается отправкой письма на указанный вами email */
 $sub='Заказ обратного звонка'; //сабж

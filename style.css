@@ -18,8 +18,8 @@
 }
 
 .header-top__logo {
-	width: 100px;
-	height: 100px;
+	width: 120px;
+	height: 120px;
 }
 
 .header-top__nav-menu {
@@ -86,7 +86,7 @@
 .header__rigtside-tel {
 	text-decoration: none;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 19px;
+	font-size: 18px;
 	color: white;
 }
 
@@ -213,7 +213,7 @@
 	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
 	text-align: center;
-	font-size: 40px;
+	font-size: 35px;
 	text-shadow: 1px 1px #fff, 1px -1px #fff, -1px 1px #fff, -1px -1px #fff, 3px 3px 6px rgba(0, 0, 0, .5);
 	color: #be5590;
 	margin-top: 0;
@@ -1224,6 +1224,7 @@
 	display: none;
 	position: absolute;
 	left: 26%;
+	top: 0;
 }
 
 .popup_window__title {
@@ -1366,4 +1367,9 @@ div.error {
 	background-repeat: no-repeat;
 	background-position: center;
 	width: 700px;
+}
+
+.map-flex {
+		display: flex;
+	justify-content: center;
 }

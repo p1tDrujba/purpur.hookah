@@ -25,7 +25,7 @@ $(window).scroll(function(){
 function showPopup(popup){
     $('.popup_bg').fadeIn();
     $('#'+ popup).fadeIn();
-    popupHeight = $('#'+ popup).outerHeight();
+//    popupHeight = $('#'+ popup).outerHeight();
     windowHeight = $(window).height();
     scrollTop = $(window).scrollTop();
 		
