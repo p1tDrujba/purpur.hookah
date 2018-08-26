@@ -1373,3 +1373,7 @@ div.error {
 		display: flex;
 	justify-content: center;
 }
+
+.new-menu-link:nth-child(n+3) {
+	margin-top: 20px;
+}
